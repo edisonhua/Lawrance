@@ -1,0 +1,374 @@
+# Unix group hosts database
+# Edit and Report using 'mkreport'
+# Lines with '#' as first char are ignored
+#
+# Format: "Important" fields are *ed
+#
+# 1:hostname	* use hostname or hostname.subdomain or FQDN *iff* !lbl.gov
+# 2:HW		
+# 3:OS
+# 4:SType	(unused)
+# 5:DOE		
+# 6:Hostid	(unused)
+# 7:Location	*
+# 8:AcctNo	*
+# 9:CType	*
+# 10:Chg	*
+# 11:Grp
+# 12:Contact	
+# 13:ContactEPO	* One person only
+# 14:ContactExt (unused)
+# 15:Coord	(unused)
+# 16:CoordEPO	* One person only. This is the field used for -C flag etc. 
+# 17:CoordExt   (unused)
+# 18:Comments	  Should not be blank. Real comment or (none) "padded".
+#
+# CType=[M]anaged,[S]ecurity,[N]FS,[B]ackups,[T]ime&Materials
+#
+###############################################################################
+#
+a0.gam:Dell 1950:CentOS 5::::88-179B:102744-009:T:0.0:::MCromaz:::KSong::(none)
+a1.gam:Dell 1950:CentOS 5::::88-179B:102744-009:T:0:::MCromaz:::KSong::Server moved to MSU
+a2.gam:Linux:SL 6.x::::NSCL:102744-010:M:300.00:::MCromaz:::BernardLi::(none)
+access.als:CVS1-VM:RHEL-6::::80-140:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+als-filer.als:FAS 3210:Ontap::::15-234:102195-010:M:300:ALS Control Systems::RFGunion:::KMFernsler::(none)
+alsacc:cluster:Centos 5.x::::50B-1275:100123-003:M:300:ALS Physics::DSRobin:::SJames::master node
+alsacc_bluearc:Bluearc controller and shelf:Centos 5.x::::50B-1275:100123-003:M:300:ALS Physics::DSRobin:::JWhite::cluster storage
+alsacc_infiniband:Supermicro FT-X5650DXI/2UQN:Centos 5.x::::50B-1275:100123-003:M:300:ALS Physics::DSRobin:::SJames::Infiniband
+alsacc_nodes:Supermicro FT-X5650DXI/2UQN:Centos 5.x::::50B-1275:100123-003:M:960:ALS Physics::DSRobin:::SJames::64 nodes
+alshub-bk.als:CVS1-VM:SL-6.x::::B15-234:102195-030:M:150:ALS Controls::SBailey2:::SJames::Linux VM
+alshub.als:Amazon Cloud:RHEL-6.x::::B15-234:102195-030:M:150:ALS Controls::SBailey2:::SJames::Amazon EC2
+alslm.als:CVS2-VM:RHEL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+ampere:Supermicro AMD:SL-6.x::::074-0205:101172-003:N:60:ESD::MCommer:::SJames::HPCS SMF client
+apex1.als:Dual Quad Core:RHEL-6::::SR6:100519-024:T:0:ALS-Physics::GJPortmann:::SJames::APEX
+apex2.als:Dual Quad Core:RHEL-6::::SR6:100519-024:T:0:ALS-Physics::GJPortmann:::SJames::APEX
+apex3.als:Dual Quad Core:RHEL-6::::SR6:100519-024:T:0:ALS-Physics::GJPortmann:::SJames::APEX
+apex4.als:Dual Quad Core:RHEL-6::::SR6:100519-024:T:0:ALS-Physics::GJPortmann:::SJames::APEX
+apps1.als:Intel Quad CPU 2.40GHz:Centos-4.7::::80:102195-010:M:300:ALS Physics:Greg Portmann:GJPortmann:::SJames::
+apps2.als:Intel Quad CPU 2.40GHz:Centos-4.7::::80:102195-010:M:300:ALS Physics:Greg Portmann:GJPortmann:::SJames::
+apps3-bak.als:CVS3-VM:SL-6.x::::15-234:102195-010:T:0:ALS Controls::RFGunion:::SJames::(none)
+apps3.als:Intel Quad CPU:SL-6.x6::::15-234:102195-010:M:300:ALS Controls::RFGunion:::SJames::(none)
+apps4.als:CVS3-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+apps5.als:CVS3-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+arch01.als:CVS3-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+arch02.als:CVS4-VM:SL-6::::6-SR07:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+arch03.als:Intel 5150 :SL-6::::6-B15-234:102195-010:M:300:ALS Controls::RFGunion:::SJames::(none)
+ares:Dell R410:SL-6.x::::50B-1275:100727-001:M:300:UCB::DHChivers:::BernardLi::master node
+ares_dbs:Dell R410:SL-6.x::::50B-1275:100727-001:M:300:UCB::DHChivers:::BernardLi::database server
+ares_nodes:Dell R410:SL-6.x::::50B-1275:100727-001:M:240:UCB::DHChivers:::BernardLi::16 nodes
+ares_storage::SL-6.x::::50B-1275:100727-001:M:300:UCB::DHChivers:::BernardLi::cluster storage
+arm:CEVS1-VM:SL-6.x::::50A-2109C:100247-001:M:150:EESA::SCBiraud:::SJames::Linux VM and DTN
+atmos:CEVS1-VM:SL-6.x::::50A-2109C:100247-001:M:150:EESA::SCBiraud:::SJames::Linux VM
+aurelien:Supermicro AMD:SL-6.x::::074-221:101861-007:N:60:ESD::BAndre:::SJames::HPCS SMF client
+austin.als:AMD Anthlon(TM) XP 2100+:Ubuntu 10.x::::10-202:102195-010:M:245:ALS Controls::ECWilliams:::SJames::(none)
+axl_bluearc:BlueArc:Centos 5::::50B-1275:101881-003:M:300:::DJHaxton:::JWhite::storage node
+b04lxioc01.als:dual quad:SL-6.x::::6-BR04:102195-010:M:300:ALS Controls::RFGunion:::SJames::(none)
+b04lxioc02-bu.als:dual quad:SL-6.x::::6-SR07:102195-010:M:300:ALS Controls:Greg Portmann:GJPortmann:::SJames::(none)
+b04lxioc02.als:dual quad:SL-6.x::::6-BR04:102195-010:M:300:ALS Controls::RFGunion:::SJames::(none)
+backup.als:SunFire V210:Solaris 9::::80-140:102195-010:T:0:ALS Media Server::RFGunion:::SJames::retired Backup server for L25 tape
+baldur:Dell 1950 cluster:Centos 4.4::::50B-1275:103392-013:M:300:CFI::SEDerenzo:::SJames::master node
+baldur_3ware:Finetec 3Ware Server:Centos 4.4::::50B-1275:103392-005:T:0:CFI::SEDerenzo:::SJames::decommissioned
+baldur_nodes:Dell 1950 cluster:Centos 4.4::::50B-1275:103174-004:M:345:CFI::SEDerenzo:::SJames::23 compute nodes
+banweiss.usc.edu:Supermicro:SL-6.x::::USC:101038-009:T:0:::banweiss@usc.edu:::KSong::DTN
+bearbin:Haswell:SL-6.x::::50A-2109C:104119-001:M:300:ESD:Jonathan Ajo-Franklin:JBAjo-Franklin:::SJames::DTN
+berkelium:Dual Opteron:cAos-2::::1275:666:M:666:csgroup::SJames:::SJames::SCS project cluster
+bl10-22.als::Solaris 2.5.1:::::101620-011:T::ALS::SJames:::SJames::
+bl10-gate.als:Intel(R) Celeron(TM):RHEL-3.0::::6 Beam 10:102195-010:T:0:ALS Control Systems:Eric Williams:ECWilliams:::SJames::NIS Slave for csg domain
+bl31lxioc01.als:Intel E31220:SL-6x::::BL3:102195-010:M:300:Controls:Changchun Sun:CCSun:::SJames::cname bl31cam
+bl7-39.als::Solaris2:::::458111:T:0:ALS::SJames:::SJames::Solaris Software Farm
+bl7-46.als:Sparc5:Solaris 2.7::::Beamline7:101620-020:T:0:ALS ESG:Susan James:SJames:::SJames::added SF client 4/10/01
+bl7-gate.als:Intel Core 2 Quad 2.83GHz:RHEL-5.5::::Beamline 7.0:102195-010:M:300:ALS Control Systems:Eric Williams:ECWilliams:::SJames::(none)
+bl832data:12 core Intel x5650:RHEL-6.1::::832 beamline:100962-012:M:300:ALS CXRO::DYParkinson:::SJames::DTN
+bl832web:8 core Intel E5-2609:SL-6.x::::B15-234:100962-012:M:300:ALS CXRO::DYParkinson:::SJames::web server
+boot1:SunFire V120:Solaris 5.9::::50B-1275:666:M:666:CSD::BernardLi:::BernardLi::(none)
+cagw.als:Intel(R) Pentium 2.40GHz:Centos-5.7::::15-234:102195-010:M:300:ALS Control Systems::CALionberger:::SJames::ALS Archiver. CNAME=alsarch.als. Also cagw-90.als.
+candelabra:AMD Opteron Processor 248:Linux WS 4::::Bldg. 88:101971-002:T::::bernstein2@llnl.gov:::KSong::LLNL supported machine in bldg 88.
+catamount:Dell:SL-6.x::::50B-1275:101092-014:M:300:MSD::JBNeaton:::BernardLi::master node
+catamount_bluearc:Bluearc Shelf:::::50B-1275:101092-014:M:300:MSD::JBNeaton:::BernardLi::storage
+catamount_infiniband:Mellanox:::::50B-1275:101092-014:M:300:MSD::JBNeaton:::BernardLi::infiniband
+catamount_nodes:Dell:SL-6.x::::50B-1275:101092-014:M:1740:MSD::JBNeaton:::BernardLi::116 nodes
+ces-filer:FAS2552:OnTap 8.3::::50A-2109C:100247-001:M:300:ESD::SCBiraud:::SJames::Netapp cDOTT
+cevs1:SuperMicro Haswell:SL-6.x::::50A-2109C:100247-001:M:300:ESD::SCBiraud:::SJames::Linux VM Master
+cevs2:SuperMicro Haswell:SL-6.x::::50A-2109C:100247-001:M:300:ESD::SCBiraud:::SJames::Linux VM Master
+cgsrv-sl.als:CVS2-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+cgsrv.als:Sunfire V210:5.9::::80:102195-010:M:300:ALS Control Systems::RFGunion:::SJames::new cgsrv
+cis-remedy1::RedHat 7.3::::50A-2109:101118-013:T:0:CIG::DHBatzloff:::SJames::(none)
+cns.als:CVS1-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+co2anal-old:MicronPC 1.4GHz Athlon:Red Hat 7.1 + XFS::::74-221:101861-007:T:0:ESD::BETaylor:::SJames::(none)
+co2anal:CEVS1-VM:SL-6x::::50A-2109C:101861-007:M:150:EESA::SCBiraud:::SJames::Linux VM
+coriolis:Ultra 80:5.8::::90-2056E:EB0801:T:0:Environmental Energy::RMLevinson:::BernardLi::off the SSL 3/1/11
+cortex:cluster:::::Warren Hall DC:666:M:666:UCB Neuroscience::mudigonda@berkeley.edu:::mej:: master node
+cortex_3ware:cluster:::::Warren Hall DC:666:M:666:UCB Neuroscience::mudigonda@berkeley.edu:::mej::cortex storage
+cortex_nodes:cluster:::::Warren Hall DC:666:M:666:UCB Neuroscience::mudigonda@berkeley.edu:::mej::14 compute nodes
+cr06lx01.als:Intel P4-3.0GHz:RHEL-5.4::::80-140:102195-010:T:0:Controls:Eric Williams:ECWilliams:::SJames::decommissioned
+crconm14.als:Sunblade 100:5.8::6317480::80-140:102195-010:T:0:ALS Control Systems::RFGunion:::SJames::(none)
+crfs3-bkup.als:FAS3210:OnTap::::80-140:102195-010:M:300:ALS Control System::RFGunion:::KMFernsler::
+cs2:sun4u:5.9::::50B-1275:666:M:666:Unix Group::BernardLi:::BernardLi::backed up fileserver
+cs4:sun4u:5.9::::50B-1275:666:M:666:Unix Group::BernardLi:::BernardLi::secure login server
+csg:CVS1-VM:SL-6::::15-234:101135-007:M:150:Engineering::RFGunion:::KMFernsler::Linux VM
+csg-old:Intel Pentium(R) 4 CPU 2.40GHz:RHEL-ES 3::::50B-1275:102268-010:T:0:Engineering::RFGunion:::KMFernsler::(none)
+csgroup::Linux::::50B-1275:666:M:666:UNIX Group::GMJung:::BernardLi::CSGroup web/postgres server.
+cso:Quad core Intel:SL-6.x::::50A-2109C:101673-001:M:300:CSO:Philippe Butler:PButler:::SJames:: web server
+cso-filer:FAS2020:OnTap::::50A-2109c:101673-001:T:0:CSO:Philippe Butler:PButler:::SJames::cso Netapp
+cso-filer2:FAS2220:OnTap::::50A-2109c:101673-001:M:300:CSO:Philippe Butler:PButler:::SJames::cso2-filer Netapp
+cso_storage:Quad Core Intel:SL-6.x::::50A-2109C:101673-001:M:300:CSO:Philippe Butler:PButler:::SJames::CSO 30+40TB storage
+cso_web:Quad Core Intel:SL-6.x::::50A-2109C:101673-001:M:150:CSO:Philippe Butler:PButler:::SJames::CSO web server
+cstest11a:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11b:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11c:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11d:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11e:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11f:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11g:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11h:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest11i:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest25a:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest25b:::::::666:M:666:666::csgroup:::csgroup::11net tmp/test address
+cstest7a:::::::666:M:666:666::csgroup:::csgroup::7net tmp/test address
+cstest7b:::::::666:M:666:666::csgroup:::csgroup::7net tmp/test address
+cstest7c:::::::666:M:666:666::csgroup:::csgroup::7net tmp/test address
+cstest7d:::::::666:M:666:666::csgroup:::csgroup::7net tmp/test address
+cstest7e:::::::666:M:666:666::csgroup:::csgroup::7net tmp/test address
+cumulus:cluster:::::50B-1275:100780-001:T:0:ESD::DRomps:::SJames::master node
+cumulus_bluearc:storage:::::50B-1275:100780-001:M:300:ESD::DRomps:::JWhite::cluster storage
+cumulus_infiniband:cluster:::::50B-1275:100780-001:T:0:ESD::DRomps:::SJames::infiniband
+cumulus_nodes:cluster:::::50B-1275:100780-001:T:0:ESD::DRomps:::SJames::28 compute nodes
+cvs1.als:Intel Xeon 5650:RHEL SL-6 Server::::15-234:102195-010:T:0:ALS Control Systems::RFGunion:::SJames::Linux VM Master
+cvs2.als:AMD Interlagos 128 core SL-6 Server:::::15-234:102195-010:M:300:ALS Controls::RFGunion:::SJames::Linux VM Master
+cvs3.als:Intel Xeon 5650:RHEL SL-6 Server::::15-234:102195-010:M:300:ALS Control Systems::RFGunion:::SJames::Linux VM Master
+cvs4.als:Intel Xeon 5650:RHEL SL-6 Server::::15-234:102195-010:T:0:ALS Control Systems::RFGunion:::SJames::Linux VM Master
+d0.gam:Dual P4 3ghz:CentOS 5::::88-179B:102744-009:T:0:ALS Controls:Carl Lionberger:CALionberger:::KSong::second application server-gretina
+datagrid2::::6360677:::100990-018:T:0:::SJames:::SJames::(none)
+docushare:Ultra2200:5.8::::50B-3209C:670807:T:0:EETD::SKumar:::BernardLi::Docushare Web hosting
+docushare_web:Ultra2200:5.8::::50B-3209C:670807:T:0:EETD::SKumar:::BernardLi::Docushare Web hosting
+master1.dogs:Dell PowerEdge R430:SL 6::::NSCL:102744-010:M:300.00:::MCromaz:::BernardLi::master node
+master1.dogs_nodes:Dell 1950s:SL 6::::NSCL:102744-010:M:1035:::MCromaz:::BernardLi::69 compute nodes
+electron.als:Quad Core:Centos-5.4::::80-156:101620-002:T:0:ALS-Physics::GJPortmann:::SJames::CSun 64-bit
+engcad4:Enterprise 420R:Solaris 5.9::6419641::50A-2109:101979-001:T:0:Engineering::HVDLippe:::BernardLi::HVDLippe(PI)
+engcad5:Enterprise 420R:Solaris 5.9::6419658::46-134:101979-001:T:0:Engineering::HVDLippe:::BernardLi::Application server apache disksuite
+engcad6:Enterprise 420R:Solaris 5.9::6419658::50A-2109:101979-001:T:0:Engineering::HVDLippe:::BernardLi::HVDLippe(PI)
+engcad7:Netra T1:Solaris 5.9::::50A-2109:101979-001:T:300:Engineering::HVDLippe:::BernardLi::HVDLippe(PI)
+engcad9:Netra T1:Solaris 5.9::::50A-2109:101979-001:T:0:Engineering::HVDLippe:::BernardLi::HVDLippe(PI)
+beppic:Dell PowerEdge R620:CentOS 5.11::::Earl Warren Hall AL02:100831-001:M:300:Engineering::HVDLippe:::BernardLi::computational server
+beppic-filer:NetApp FAS2554:OnTap::::Earl Warren Hall AL02:100831-001:M:300:Engineering::HVDLippe:::BernardLi::HVDLippe filer
+esd:XServ:MAC OS 10.6::::90-1133:101861-007:T:0:ESD::PKLau:::SJames::XSERV web ftp server
+esd-stage:IT VM:CentOS 6::::50B-1285:100410-001:T:0:ESD::PKLau:::SJames::esd web backup
+esd01:Linux Cluster:SL-6::::50B-1275:100410-001:T:0:ESD::PKLau:::SJames::master node
+esd01_3ware:3Ware RAID Server:SL-6::::50B-1275:100410-001:T:0:ESD::PKLau:::SJames::decommissioned
+esd01_bluearc:cluster:::::50B-1275:100410-004:T:0:ESD::PKLau:::JWhite::esd01 storage
+esd01_infiniband:Linux Cluster:SL-6::::50B-1275:100410-001:T:0:ESD::PKLau:::SJames::Cluster Interconnect Maintenance
+esd01_nodes:Linux Cluster:SL-6::::50B-1275:100410-001:T:0:ESD::PKLau:::SJames::15 Compute Nodes
+euphrates:PC:SL 6.3::::50E-1519:100990-018:S:135:Math:Paul Concus:P_Concus:::KSong::SSLA+HPCS SMF
+euphrates3:PC:SL 6.3::::50E-1519:100990-018:M:300:Math:Paul Concus:P_Concus:::KSong::cluster master+DTN
+euphrates-2:Pentium-4 3Ghz:Red Hat Linux WS-3::::50E-1519:100990-018:T:0:Math::Pokunev:::KSong::Security SLA
+excsrv.als:CVS2-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+exercise:ITVM:Linux::::50B-1275:102499-001:T:0::Paul Williams:PTWilliams:::KMFernsler::LSD ealth Survey web app server
+explorer:Dell 6220:SL 6.x::::50B-1275:100812-001:M:300:ESD::ELSonnenthal:::SJames::master node
+explorer_infiniband:Dell 6220:SL-6.x::::50B-1275:100812-001:M:300:ESD::ELSonnenthal:::SJames::(none)
+explorer_nodes:Dell 6220:SL-6.x::::50B-1275:100812-001:M:120:ESD::ELSonnenthal:::SJames::8 Compute Nodes
+faraday:Supermicro Intel:SL-6.x::::074-0303:101172-003:N:60:ESD::GANewman:::SJames::HPCS SMF client
+fs.gam:FAS270:Ontap::::88-179B:102744-009:T:0:Gretina Project::MCromaz:::KSong::
+fs1.gam:FAS2020:Ontap::::MSU::T:0:Gretina Project::MCromaz:::KSong::netapp moved to MSU
+fs1.lbl.gov:Netapp S550:Ontap::::bldg 88-179B:102744-009:T:0:::MCromaz@lbl.gov:::KSong::(none)
+fs2.gam:Netapp Storevault:Ontap 7.x::::88-179B:102744-009:T:0:Gretina Project::MCromaz:::BernardLi::netapp filesystem for home and data
+fs2.lbl.gov:Netapp FAS3220:Ontap 8.x::::88-179B:102744-009:M:300:Gretina Project::MCromaz:::BernardLi::Filesystems for home and data
+fs3.nscl.msu.edu:Netapp FAS2554:Ontap 8.3::::NSCL:102744-009:M:300:Gretina Project::MCromaz:::BernardLi::Filesystems for home and data
+ganita:cluster:Centos 5::::50B-1275:101514-003:T:0:Lester Group::WALester:::SJames::master node
+ganita_infiniband:Dell:Centos 5.x::::50B-1275:101514-003:T:0:Lester Group::WALester:::SJames::ganita 24 node cluster
+ganita_nodes:cluster:Centos 5::::50B-1275:101514-003:T:0:Lester Group::WALester:::SJames::24 compute nodes
+ganita_storage:cluster:Centos 5::::50B-1275:101514-003:T:0:Lester Group::WALester:::SJames:: storage node
+geoseq:cluster:Centos 5::::50B-1275:G23001:T:0:ESD Geoseq::QLZhou:::SJames::condo
+geoseq_bluearc:cluster:Centos 5::::50B-1275:G23001:T:0:ESD Geoseq::QLZhou:::JWhite::storage
+geoseq_infiniband:Dell:Centos 5.x::::50B-1275:G23001:T:0:ESD Geoseq::QLZhou:::SJames::condo
+geoseq_nodes:cluster:Centos 5::::50B-1275:G23001:T:0:ESD Geoseq::QLZhou:::SJames::condo
+goddess:Quad Core AMD:SL-6.x::::90-2002E:101328-001:T:0:EETD::LJin:::SJames::broke server
+gonzo.als:PC-atholon 1.8:RHat 7.2::::10:102195-010:T:0:ALS Controls:Eric Williams:ECWilliams:::SJames::brought down for repair 0403
+gorgon:Ultra 10:5.7::::B88:101971-006:T:0:Gammasphere NSD:Mario Cromaz:MCromaz:::BernardLi::system decomissioned
+gpanda:Quad Core Intel:SL-6.x::::90-2002E:101328-001:M:300:EETD::LJin:::SJames::DTN
+grfs1:Dual P4 2.8g:RHE-ES-3::::88-179B:102744-009:T:0:ALS Controls:Chris Timossi:CATimossi:::SJames::mysql server
+gundo:Sparc 10:Solaris 7::::90-3104:677102:T:0:EETD::V_Bazjanac:::SJames::off the contract 10.01.11
+hadley:Linux Cluster:::::Warren Hall Data Center:666:T:0:::jchiang@atmos.berkeley.edu:::mej::master node
+hadley_3ware:Linux Cluster:::::Warren Hall Data Center:666:T:0:::jchiang@atmos.berkeley.edu:::mej::cluster head
+hadley_nodes:Linux Cluster:::::Warren Hall Data Center:666:T:0:::jchiang@atmos.berkeley.edu:::mej::17 compute nodes
+hbar:cluster:Centos 5.x::::50B-1275:101864-002:M:300:Louie/Cohen::FGiustino:::SJames:: master node
+hbar-filer:FAS270:OnTAP::::50B-1275:101864-002:M:300:Louie/Cohen::FGiustino:::SJames::HBAR cluster Netapp 
+hbar_myrinet:cluster:Centos 3.3 x86-64::::50B-1275:101864-002:M:100:Louie/Cohen::FGiustino:::SJames:: myrinet
+hbar_nodes:cluster:Centos 3.3 x86-64::::50B-1275:101864-002:M:825:Louie/Cohen::FGiustino:::SJames::55 compute nodes
+henyey:cluster:::::Warren Hall Data Center:666:T:666:::arons@berkeley.edu:::mej::master
+henyey1_gpfs::::::Warren Hall Data Center:666:T:666:::Arons@berkeley.edu:::JWhite::GPFS storage
+henyey2_gpfs::::::Warren Hall Data Center:666:T:666:::Arons@berkeley.edu:::JWhite::GPFS storage
+henyey_3ware:cluster:::::Warren Hall Data Center:666:T:666:::arons@berkeley.edu:::mej::file server
+henyey_infiniband:cluster:::::Warren Hall Data Center:666:T:666:::arons@berkeley.edu:::mej::IB
+henyey_nodes:cluster:::::Warren Hall Data Center:666:T:666:::arons@berkeley.edu:::mej::96 nodes
+indus:AMD Opteron:SL 6.4::::50E-1511:100990-018:S:135:Math:Paul Concus:P_Concus:::KSong::SSLA+HPCS SMF
+industry:SunFireV120:Solaris 5.9::::50B-1275:102369-001:T:300:EETD::BADesola:::BernardLi::Docushare server
+industry_web:SunFireV120:Solaris 5.9::::50B-1275:102369-001:T:150:EETD::BADesola:::BernardLi::Docushare Web hosting.
+janomics:Intel X5650 2.67GHz:Centos 5.7 64 bit::::74-221:100410-001:T:0:ESD:Bryan Taylor:BETaylor:::SJames::
+jbei:Dual Opteron 2.75Ghz:SL-6 64 bit::::50B-1275:100822-035:M:300:PBD-JBEI:Paul Adams:PDAdams:::SJames::master
+jbei_3ware:3Ware SAS:SL-6::::50B-1275:100822-035:M:300:JBEI::PDAdams:::SJames::storage node
+jbei_nodes:Dual Opteron 2.75Ghz:SL-6::::50B-1275:100822-035:M:1380:PBD-JBEI:Paul Adams:PDAdams:::SJames::92 compute nodes
+jcap:Finetec:SL-6.x::::50B-1275:103902-050:M:300:UCB::mhg@cchem.berkeley.edu:::BernardLi::master node
+jcap_nodes:Finetec:SL-6.x::::50B-1275:103902-050:M:690:UCB::mhg@cchem@berkeley.edu:::BernardLi::46 nodes
+jcap_storage:Bluearc Shelf:SL-6.x::::50B-1275:103902-050:M:300:UCB::mhg@cchem.berkeley.edu:::BernardLi::database server
+jordan:Micron:Linux RHE 5 x86_64::::50E-1503:100990-018:S:75:Math::P_Concus:::KSong::Security SLA
+klamath:PC:Centos 5.x::::50E-1516:100990-018:S:75:::P_Concus@lbl.gov:::KSong::(none)
+lafite:Dell Dimension 670:caos-2::6594409::90-2024B:101762-003:T:0:Geochemistry::CISteefel:::SJames::Linux support
+lakshmi:Ultra 1:Solaris 7::6336317::50B-3211:666:M:666:Unix Group:Susan James:SJames:::SJames::(none)
+latache:Dell Precision T7400:CentOS 5.3::6677232::90-2024G:101762-003:T:0:Geochemistry::CISteefel:::SJames::Linux server
+lek:Ultra 2:Solaris 5.9::6331592::50A-2109:100990-018:T::Math:Paul Concus:P_Concus:::KSong::Turned off 2/28/2015
+locker::FreeBSD::6484397::50B-1175:666:M:666:UNIX Group::JWhite:::JWhite::(none)
+luolnx:Micron Athlon 1.6Ghz:Centos-4.1::::70-0257E:100667-001:T:0:NSD::YXLuo:::SJames::Linux Development Server
+mafia:sun4u:Solaris 5.9::::71-170:101776-005:T:0:ATAP:Derun Li:DLi:::BernardLi::SunFire V120
+mafia_swfarm:sun4u:Solaris 5.9::::71-170:Z41003:T:0:ATAP:Derun Li:DLi:::BernardLi::SunFire V120
+magma:Dell:Centos 5.x::::Warren Hall Data Center:666:M:666:UCB CGRL::ganeshm@berkeley.edu:::mej::CGRL web server
+mariah:Storage node:SL-6.5::::50A-2109C:101328-001:T:0:EETD::LJin:::SJames::Linux Development Server
+math::SL-6x::::50A-2109:100990-018:M:300:MATH::P_Concus:::KSong::Linux web server
+math-filer::OnTap::::50A-2109:100990-018:M:300::::::KSong::(none)
+mekong:SuperMicro:SL 6::::50E-1506:100990-018:S:135:Math:Paul Concus:P_Concus:::KSong::SSLA+HPCS SMF
+metacluster:Dual PIII:Redhat 7.3::::50B-1275:666:M:666:Unix:Greg Kurtzer:GMKurtzer:::GMKurtzer::Ganglia cluster server
+metal.lbl.gov:Dell C2100:SL 6.1::::88-179b:102744-009:M:300:::MCromaz@lbl.gov:::BernardLi::(none)
+mgpc:FineTec:CentOS 5.3::::50C:101118-011:T:0:CITG::MGelbaum:::BernardLi::
+mh1:sun4u:5.9::::50B-1175:666:M:666:Unix Group::KMFernsler:::KMFernsler::(none)
+mhg:cluster:Centos 5.x x86-64::::50B-1275:103978.002:M:300:Head-Gordon::mhg@bastille.cchem.berkeley.edu:::SJames::master node
+mhg_bluearc:BlueArc:Centos 5.x x86-64::::50B-1275:103978-002:T:0:Head-Gordon::mhg@bastille.cchem.berkeley.edu:::JWhite::storage node
+mhg_nodes:cluster:Centos 5.x x86-64::::50B-1275:103978-002:M:840:Head-Gordon::mhg@bastille.cchem.berkeley.edu:::SJames::56 compute nodes
+mpsun1.als:Sparc 5:Solaris 2.6::::ALS-6:A58197:T:0:CXRO::TNKellogg:::SJames::
+musigny:Supermicro FT-X5650DXI/2UQN:Centos 5.x::::50B-1275:102856-013:M:300:ESD Geochem::CISteefel:::SJames::master node
+musigny_infiniband:Supermicro FT-X5650DXI/2UQN:Centos 5.x::::50B-1275:102856-013:M:300:ESD Geochem::CISteefel:::SJames::(none)
+musigny_nodes:Supermicro FT-X5650DXI/2UQN:Centos 5.x::::50B-1275:102856-013:M:240:ESD Geochem::CISteefel:::SJames::16 node cluster
+nanite:ITVM:Linux::::50B-1275:666:M:666:666::KMFernsler:::KMFernsler::alias for foundry2
+nano-filer:FAS3140:OnTap::6714494::50-2109:666:M:666:Molecular Foundry::KMFernsler:::KMFernsler::MF Filer (SN 3058936)
+nano_infiniband:Dell 1850 cluster:::::50B-2175:100404-006:M:300:Molecular Foundry Theory::KMFernsler:::KMFernsler::nano IB
+nano_nodes:Dell 1850 cluster:::::50B-2175:100404-006:M:510:Molecular Foundry Theory::JBNeaton:::KMFernsler::34 compute nodes
+nanobio1:Intel:Centos 4.4::::67-5112::T::::MDConnolly:::KMFernsler::This should have SLURP checks run against.
+natgas:Dell:Centos 5.x::::50B-1275:100666-001:T:0:ESD NatGas::GJMoridis:::SJames::master node
+natgas_infiniband:Dell:Centos 5.x::::50B-1275:100666-001:T:0:ESD NatGas::GJMoridis:::SJames::128 node cluster
+natgas_nodes:Dell:Centos 5.x::::50B-1275:100666-001:T:0:ESD NatGas::GJMoridis:::SJames::128 nodes
+netapp1:F740:OnTap 6.4.2P6::::50B-1275:666:M:666:UNIX Group::KMFernsler:::KMFernsler::(none)
+netapp7:F740:OnTap 6.4.2P6::::50B-1275:666:M:666:UNIX Group::KMFernsler:::KMFernsler::swfarm
+nsa:Dell Intel Xeon CPU 2.8GHz:RH Enter. WS 3::::Bldg 88:101971-006:T:0:Nuclear Science Group::MCromaz:::KSong::T & M new Dell machine
+nsb:MPC Intel:RH Enterprise WS 3::::Bldg 88:101971-006:T:0:Nuclear Science Group::PFallon:::SJames::T & M new MPC machine
+nscs:Sun Fire V240:5.9::::88:101971-006:T:0:Gammasphere NSD:Mario Cromaz:MCromaz:::BernardLi::Also attached is an A1000.
+old-diag71.als:Pentium III 1 GHZ:RedHat 7.3::::ALS SR6:102195-010:T:0:ALS Controls::AKbiocca:::SJames::alias diag71.als
+old-pdb.als:Woodcrest Dual Core 5150:RHEL-4.4 ES::::15-234:102195-010:T:0:ALS Control System::RFGunion:::SJames::replacement MySQL for cgsrv
+op0.gam:linux:redhat enterprise WS 3::::88-179B:102744-009:T:0:::MCromaz:::KSong::gretina operator console
+op1.gam:linux:redhat enterprise WS 3::::88-179B:102744-009:T:0:::MCromaz:::KSong::gretina operator console
+op2.gam:linux:redhat enterprise WS 3::::88-179B:102744-009:T:0:::MCromaz:::KSong::gretina operator console
+op3.gam:linux:redhat enterprise WS 3::::88-179B:102744-009:T:0:::MCromaz:::KSong::gretina operator console - Moved to MSU
+op4.gam:AMD Opteron:Centos 5.x::::88-179B:102744-009:M:300:::MCromaz@lbl.gov:::BernardLi::(none)
+otrp:2x1GHz P-III:Centos-3.5::::66-325:864N1G:T:0:Physical Biosciences::JYano:::SJames::client EXAFS domain
+parana:Pentium-4 3Ghz:Red Hat Linux WS-3::::50E-1503:100990-018:T:0:Math::pokunev:::KSong::Machine is no longer in this group
+pdb.als::SL-6x::::15-234:102195-010:M:150:ALS Control System::RFGunion:::SJames::Linux VM
+phasis:Supermicro E5-2680 0 @ 2.70GHz:SL-6.4::::B15-234:100962-006:M:300:Cosmic BL901::DAShapiro:::SJames::master node
+phasis_infiniband:Supermicro E5-2680 0 @ 2.70GHz:SL-6.4::::B15-234:100962-006:M:300:Cosmic BL901::DAShapiro:::SJames::(none)
+phasis_nodes:Supermicro E5-2680 0 @ 2.70GHz:SL-6.4::::B15-234:100962-006:M:75:Cosmic BL901:DAShapiro::::SJames::5 compute nodes
+phys1-bak.als:CVS1-VM:SL-6.x::::B15-234:102195-010:T:0:ALS Physics:Greg Portmann:GJPortmann:::SJames::(none)
+phys1.als:Intel Quad CPU 2.40GHz:SL-6.x::::B15-234:102195-010:M:300:ALS Physics:Greg Portmann:GJPortmann:::SJames::(none)
+piano::linux::::bldg 88:101971-002:T::::LWPhair@lbl.gov:::KSong::(none)
+pinsys:SunFire 480:Solaris 5.9::::50A-1156:100262-060:T:300:Telephone Services::DHBatzloff:::KMFernsler::new system to replace cmpsys
+plutonium_nodes:Sun cluster:Centos 5.4::::50B-1275:L106R2:T:0:CFI::SEDerenzo:::SJames::19 nodes LEASE
+potomac:AMD Opteron Processor 250:Red Hat WS 3:::::100990-018:S:75:::JASethian@lbl.gov:::KSong::(none)
+proxmox0-84.als:VM Master:Debian::::15-234:102195-010:M:300:ALS Controls::RFGunion:::KMFernsler::Linux VM Master
+proxmox1-84.als:VM Master:Debian::::15-234:102195-010:M:300:ALS Controls::RFGunion:::KMFernsler::Linux VM Master
+ps2.als:CVS1-VM:SL-6::::15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+pulsar:x86_64:caos2::::50C-3313:666:M:666:scs::mej:::mej::mej's workstation
+pxs:sun4u:Solaris 5.7::::50B-6237:791627:T:0:ATLAS:Sandra Ciocio:A_Ciocio:::BernardLi::now CName of sts
+reddy:SUNW,Sun Fire V120:5.8::::76-123:100487-014:M:300:Facilities::RFGunion:::SJames::ECMS for ALS
+rhone:Micron:SL 6.3::::50F-1642:100990-018:S:135:Math/Nersc-DM:Paul Concus:P_Concus:::KSong::SSLA+HPCS SMF
+rio-grande:Micron:Linux RH WS 3::::50E-1518:100990-018:T::Math:Paul Concus:P_Concus:::KSong::Security SLA
+rubicon.lbl.gov:Dell:SL 6.2::::50A-2109:100990-018:S:135:Math::P_Concus@lbl.gov:::KSong::SSLA+HPCS SMF
+s02lxioc01.als:AMD 16core 6284SE:SL-6.5::::6-SR04:102195-010:M:300:ALS Physics::GJPortmann:::SJames::BPM server
+s02lxioc01-bak.als:Haswell 16core 6284SE:SL-6.5::::6-SR04:102195-010:M:300:ALS Physics::GJPortmann:::SJames::BPM bak server
+saic.ares:Supermicro:SL-6.x::::50B-1275:100727-001:M:300:UCB::BJQuiter:::BernardLi::master node
+saic.ares_nodes:Supermicro:SL-6.x::::50B-1275:100727-001:M:135:UCB::BJQuiter:::BernardLi::9 nodes
+saic.ares_bigmem:Supermicro:Windows::::50B-1275:100727-001:M:300:UCB::BJQuiter:::BernardLi::bigmem node
+scs-gw:Dell 1950:Centos 5.3::::50B-1275:666:M:666:csgroup:Bernard Li:BernardLi:::BernardLi::SCS gateway to clusters CName of scs-gw2
+scs-www:x86_64:SL 6::::50B-1275:666:M:666:scs::scs:::mej::SCS Web Server (internal wiki)
+scs_tm:::::::100171-002:T:0::::::::placeholder to store scs t&m acct number.
+scsfw-01:Viking:Firewall- Perceus Infrastructure::::50B-1275:666:M:666:csgroup::csgroup:::GMKurtzer::https..//csgroup.lbl.gov..446/internal/scsfw-01.html
+sdm:Sun Ultra 1:Solaris 2.7::::50B-1175:100990-018:N:60:NERSC DM:Alex Sim:ASim:::KSong::Solaris Software Farm
+seismo:SM Haswell:SL-6.x::::074-0327G:100410-001:N:60:ESD::PKLau:::SJames::Seismo project
+seismo2:SM Haswell:SL-6.x::::074-0327G:100410-001:N:60:ESD::PKLau:::SJames::Seismo project
+sercon.als:Sparc 5:Solaris 7::::80-140:102195-010:T:0:ALS Controls::RFGunion:::SJames::serial console
+sioc01.als:CVS4-VM:SL-6::::SR07:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+sioc02.als:Proxmox-VM:SL-6::::B15-234:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+sioccam1.als:Proxmox-VM:SL-6::::B15-234:102195-010:M:150:ALS Controls::GJPortmann:::SJames::Linux VM
+snake:Finetec Supermicro:Centos 5.5::6331592::2109:100990-018:M:300:Math:Paul Concus:P_Concus:::KSong::Security SLA
+snowbear:Titan GPU:SL-6.x::::50A-2109C:104119-001:M:300:ESD:Jonathan Ajo-Franklin:JBAgo-Franklin:::SJames::GPU Server
+sol.gam:sun fire v240:solaris 9::::88-179B:102744-009:M:300:::MCromaz:::BernardLi::Dual drops also known as sol1.gam
+spot832:12 core Intel E5-2667:SL-6.x::::832 beamline:100962-012:M:300:ALS CXRO::DYParkinson:::SJames::DTN
+sr02diag.als:Intel Xeon 3.0GHz Dual Core:SL-6.3::::SR02:102195-010:M:300:ALS Controls::ECWilliams:::SJames::server (diag87 cname)
+sr07lxioc02.als:dual quad:SL-6.x::::6-SR07:102195-010:M:300:ALS Controls::ECWilliams:::SJames::(none)
+sseos:Sun X2100:cAos 2::::50B-1275:101908-004:M:300:NSD::HSMatis:::KMFernsler::Linux server AKA rnc.lbl.gov
+swmirror1:Pentium-4 dual 2.4GHz:RedHat-9.0::::50B-1275:666:M:666:Unix::KMFernsler:::KMFernsler::3Ware RAID
+temple:Dell Quad 3.4GHz:SL-6.x::::46-186:100389-006:T:0:AFRD::HFelice:::SJames::(none)
+tigris:Athlon AMD Processor 250:SL 6.2::::50E-1515:100990-018:S:135:Math:Paul Concus:P_Concus:::KSong::SSLA+HPCS SMF
+ux6:sun4u:5.9::::50B-1275:666:M:666:Unix Group::KMFernsler:::KMFernsler::Ultra 2300
+ux8:Supermicro:5.9::::50B-1275:666:M:666:Unix Group::BernardLi:::BernardLi::E4500
+vector:Dell:Centos 5.x::::Warren Hall Data Center:666:M:666:UCB CGRL::ganeshm@berkeley.edu:::mej::master node
+vector_bluearc:Dell:Centos 5.x::::Warren Hall Data Center:666:M:666:UCB CGRL::ganeshm@berkeley.edu:::JWhite::storage node
+vector_nodes:Dell:Centos 5.x::::Warren Hall Data Center:666:M:666:UCB CGRL::ganeshm@berkeley.edu:::mej::9 compute nodes
+voltaire:Dell:Centos 5.x::::50B-1275:103620-001:M:300:ESD Geophysics::GANewman:::SJames::master node
+voltaire_bluearc:Bluearc:::::50B-1275:103620-001:M:300:ESD Geophysics::GANewman:::JWhite::voltaire cluster storage
+voltaire_infiniband:Dell:Centos 5.x::::50B-1275:103620-001:M:300:ESD Geophysics::GANewman:::SJames::44 nodes
+voltaire_nodes:Dell C6100:Centos 5.x::::50B-1275:103620-001:M:660:ESD Geophysics::GANewman:::SJames::44 nodes
+vulcan:Dell cluster::::::100404-006:M:300:::DGPrendergast:::KMFernsler::vulcan master node
+vulcan_DDN:Dell cluster::::::100404-006:M:300:::DGPrendergast:::KMFernsler::vulcan DDN storage
+vulcan_bluearc:BlueArc::::::100404-006:M:300:::DGPrendergast:::JWhite::cluster storage
+vulcan_infiniband:Dell cluster::::::100404-006:M:300:::DGPrendergast:::KMFernsler::vulcan infiniband
+vulcan_nodes:Dell cluster::::::100404-006:M:4140:::DGPrendergast:::KMFernsler::276 compute nodes
+vuv:SandyBridge E5-2670:SL-6.x::::15-235:101539-001:M:300:Chemical Sciences::MAhmed:::SJames::(none)
+wall-e:Dell C2100:Scientific Linux::::88-179B:102744-009:M:300:NSD::MCromaz:::BernardLi::(none)
+warewulf:Dual Xeon 2.4ghz:cAos 2::::50B-1275:666:M:666:Unix:Greg Kurtzer:GMKurtzer:::SJames::warewulf repository
+web2b.als:Proxmox-VM:SL-6 64 bit::::15-235:102195-010:M:150:ALS Controls:RFGunion::::SJames::Linux VM
+web2b.als_web:Proxmox-VM:SL-6 64 bit::::15-235:102195-010:T:0:ALS Controls::RFGunion:::KMFernsler:: backup web
+web2c.als:Godaddy Server VM:RHEL-6 64 bit::::Godaddy:102195-010:S:75:ALS Controls::RFGunion:::SJames::Linux VM
+web2c.als_web:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:150:ALS Controls::RFGunion:::KMFernsler::web
+web4.als:Proxmox- VM:SL-6::::15-235:102195-010:M:150:ALS Controls::RFGunion:::SJames::Linux VM
+web5.als:Proxmox-VM:SL-6::::15-235:102195-010:M:150:ALS Controls::RFGunion:::KMFernsler::Linux VM
+web5.als_web:Proxmox-VM:SL-6::::15-235:102195-010:M:150:ALS Controls::RFGunion:::KMFernsler::web server
+web6.als:Godaddy Server VM:RHEL-6 64 bit::::Godaddy:102195-010:M:150:ALS Controls:RFGunion::::KMFernsler::Linux VM
+web7.als:Proxmox-VM:SL-7.x:::::102195-010:M:150:ALS Controls:RFGunion::::SJames::Linux VM
+wiki-nano:ITVM:Linux::::50B-1275:666:M:666:Molecular Foundary::KMFernsler:::KMFernsler::virtual host
+wiretap:CVS2-VM:SL-6.x::::15-234:102195-010:M:150:ALS Controls:RFGunion::::KMFernsler::Linux VM
+www-hpcs::SL-6.x::::50B-1275:666:M:666:UNIX Group::GMJung:::BernardLi::VM hosted by Infrastructure
+xmas-master.als:dual opteron 2.1:Centos-4.1::::ALS 6:100962-009:M:300:ALS-ESG:Nobu Tamura:NTamura:::SJames:: master node
+xmas-storage_3ware:dual quad Intel:Centos-5.x::::ALS 6:100962-009:M:300:ALS-ESG:Nobu Tamura:NTamura:::SJames:: storage node
+xmas_nodes:::::::100962-009:M:360:ESG/ALS::NTamura:::SJames:: 24 compute nodes
+yakima:dell:Centos 5.3::::50A-2109:100990-018:M:300:::Jamie Sethian:::KSong::(none)
+yukon:Dell:Centos 5.x::::2109:100990-018:M:300:::P_Concus@lbl.gov:::KSong::(none)
+jamie:PC:Centos 5.9::::50E-1513:100990-018:S:75:Math::JASethian:::BernardLi::SSLA no HPCS SWF
+xmas-storage_3ware:quad Intel:Centos-5.x::::ALS 6:100962-009:M:300:ALS-ESG:Nobu Tamura:NTamura:::SJames::3ware
+web6.als:Godaddy Server VM:RHEL-6 64 bit::::Godaddy:102195-010:M:200:ALS Controls:RFGunion::::KMFernsler::vm large SLA
+wiretap:CVS2-VM:SL-6.x::::15-234:102195-010:M:150:ALS Controls:RFGunion::::KMFernsler::vm small SLA
+test1a:CVS2-VM:SL-6.x::::15-234:102195-010:M:300:ALS Controls:RFGunion::::KMFernsler::lsi raid
+test2b:dell:Centos 5.3::::50A-2109:100990-018:M:300:::Jamie Sethian:::KSong::lsi raid
+test3a:Proxmox-VM:SL-6::::15-235:102195-010:M:150:ALS Controls::RFGunion:::KMFernsler::vm small sla
+test3b:Proxmox-VM:SL-6::::15-235:102195-010:M:150:ALS Controls::RFGunion:::KMFernsler::vm small sla
+test4a:Godaddy Server VM:RHEL-6 64 bit::::Godaddy:102195-010:M:175:ALS Controls::RFGunion:::SJames::vm medium SLA
+test4b:Godaddy Server VM:RHEL-6 64 bit::::Godaddy:102195-010:M:175:ALS Controls::RFGunion:::SJames::vm medium SLA
+test5a:PC:Centos 5.9::::50E-1513:100990-018:M:200:Math::JASethian:::BernardLi::vm large SLA
+test5b:PC:Centos 5.9::::50E-1513:100990-018:M:200:Math::JASethian:::BernardLi::vm large SLA
+test6a:Dell C6100:Centos 5.x::::50B-1275:103620-001:M:25:ESD Geophysics::GANewman:::SJames::vm small
+test6b:Dell C6100:Centos 5.x::::50B-1275:103620-001:M:25:ESD Geophysics::GANewman:::SJames::vm small
+test7a:Bluearc:::::50B-1275:103620-001:M:50:ESD Geophysics::GANewman:::JWhite::vm medium
+test7b:Bluearc:::::50B-1275:103620-001:M:50:ESD Geophysics::GANewman:::JWhite::vm medium
+test8a:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:100:ALS Controls::RFGunion:::KMFernsler::vm large
+test9a:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:300:ALS Controls::RFGunion:::KMFernsler::cluster master+DTN
+test10a:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:300:ALS Controls::RFGunion:::KMFernsler::cluster master+DTN
+test11:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:15:ALS Controls::RFGunion:::KMFernsler::VM Storage 20
+test12:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:30:ALS Controls::RFGunion:::KMFernsler::VM Storage 40
+test13:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:60:ALS Controls::RFGunion:::KMFernsler::vm storage 80
+test14:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:10:ALS Controls::RFGunion:::KMFernsler::vm storage 20 SLA
+test15:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:20:ALS Controls::RFGunion:::KMFernsler::vm storage 40 SLA
+test16:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:40:ALS Controls::RFGunion:::KMFernsler::vm storage 80 SLA
+test17:CVS2-VM:SL-6.x::::15-234:102195-010:M:15:ALS Controls:RFGunion::::KMFernsler::vm storage 20
+test171:CVS2-VM:SL-6.x::::15-234:102195-010:M:15:ALS Controls:RFGunion::::KMFernsler::vm sToRaGe 20
+test18:CVS2-VM:SL-6.x::::15-234:102195-010:M:30:ALS Controls:RFGunion::::KMFernsler::vm storage 40
+test1212:CVS2-VM:SL-6.x::::15-234:102195-010:M:30:ALS Controls:RFGunion::::KMFernsler::vm storAGE 40
+test19:CVS2-VM:SL-6.x::::15-234:102195-010:M:60:ALS Controls:RFGunion::::KMFernsler::vm storage 80
+asdadsa20:CVS2-VM:SL-6.x::::15-234:102195-010:M:10:ALS Controls:RFGunion::::KMFernsler::vm storage 20 sla
+jiadskodsa21:CVS2-VM:SL-6.x::::15-234:102195-010:M:20:ALS Controls:RFGunion::::KMFernsler::vm storage 40 sla
+aosk22:CVS2-VM:SL-6.x::::15-234:102195-010:M:40:ALS Controls:RFGunion::::KMFernsler::vm storage 80 sla
+knasdk23:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:100:ALS Controls::RFGunion:::KMFernsler::VM LARGE
+knasdk24:CVS1 VM:RHEL-6 64 bit::::Godaddy:102195-010:M:100:ALS Controls::RFGunion:::KMFernsler::VM LaRgE
