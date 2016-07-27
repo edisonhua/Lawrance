@@ -1,0 +1,69 @@
+#
+# User controllable parameters for 832data-raw-specific.pl aka purge.pl
+#
+# Note:
+#     - Ensure that all configuration lines end with single comma (,).
+#     - Lines beginning with '#' are comments.
+#
+
+#
+# Force purge if below % free.
+#
+# Default : 5
+#
+#Free_Space_Limit => 5,
+
+#
+# Number of days beyond which to purge (file that was last accessed more than
+# Days_to_Purge days back, will be purged).
+#
+# Default : 60
+#
+Days_to_Purge => 60,
+
+#
+# Maximum time between forced purges, in DAYS.
+#
+# Default : 4.0
+#
+#Max_time_since_last_purge => 4.0,
+
+#
+# Name of target file system to be purged. This will be used in creating an
+# appropriately named log directory to store respective logs.
+#
+# Default : "raw"
+#
+#Purge_File_System_name => "raw",
+
+#
+# Target file system that needs to be purged of empty directories.
+#
+# Default : "/data/raw"
+#
+#Purge_File_System => "/data/raw",
+
+#
+# Top level log directory under which required subdirectories will be created
+# to store log files.
+#
+# Default : "/data/raw/log_files/Disk_Purge"
+#
+#Base_Log_Directory => "/data/raw/log_files/Disk_Purge",
+
+#
+# Location of directory containing various *.inp files mentioned below.
+# 	files_to_avoid.inp, groups_to_avoid.inp,
+#	paths_to_avoid.inp, users_to_avoid.inp, dirs_to_avoid.inp
+#
+# Default : "."
+#
+Inp_Files_Directory => ".",
+
+#
+# Actually purge empty directories? (1 = Yes, 0 = Just list the possibilities)
+#
+# Default : 0
+#
+Purge_Empty_Directories => 0,
+
