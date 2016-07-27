@@ -1,0 +1,79 @@
+access.als M 150
+als-filer.als M 300
+alshub-bk.als M 150
+alshub.als M 150
+alslm.als M 150
+apps1.als M 300
+apps2.als M 300
+apps3.als M 300
+apps4.als M 150
+apps5.als M 150
+arch01.als M 150
+arch02.als M 150
+arch03.als M 300
+austin.als M 245
+b04lxioc01.als M 300
+b04lxioc02-bu.als M 300
+b04lxioc02.als M 300
+bl31lxioc01.als M 300
+bl7-gate.als M 300
+cagw.als M 300
+cgsrv-sl.als M 150
+cgsrv.als M 300
+cns.als M 150
+crfs3-bkup.als M 300
+cvs2.als M 300
+cvs3.als M 300
+excsrv.als M 150
+pdb.als M 150
+phys1.als M 300
+proxmox0-84.als M 300
+proxmox1-84.als M 300
+ps2.als M 150
+s02lxioc01.als M 300
+s02lxioc01-bak.als M 300
+sioc01.als M 150
+sioc02.als M 150
+sioccam1.als M 150
+sr02diag.als M 300
+sr07lxioc02.als M 300
+web2b.als M 150
+web2c.als S 75
+web2c.als_web M 150
+web4.als M 150
+web5.als M 150
+web5.als_web M 150
+web6.als M 150
+web7.als M 150
+xmas-master.als M 300
+web6.als M 200
+
+sum= 10870
+count= 49
+
+
+
+
+apex1.als T 0
+apex2.als T 0
+apex3.als T 0
+apex4.als T 0
+apps3-bak.als T 0
+backup.als T 0
+bl10-gate.als T 0
+bl7-39.als T 0
+bl7-46.als T 0
+cr06lx01.als T 0
+crconm14.als T 0
+cvs1.als T 0
+cvs4.als T 0
+electron.als T 0
+gonzo.als T 0
+mpsun1.als T 0
+old-diag71.als T 0
+old-pdb.als T 0
+phys1-bak.als T 0
+sercon.als T 0
+web2b.als_web T 0
+
+count= 21
