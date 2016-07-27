@@ -1,0 +1,68 @@
+[Dec]
+phu 1.1 hours
+ermartin 16.6167 hours
+njlindse 49.1833 hours
+camitche 121.95 hours
+
+
+[Jan]
+phu 8.06667 hours
+ermartin 9.43333 hours
+njlindse 29.2333 hours
+camitche 11.1 hours
+
+
+[Feb]
+ermartin 15.3667 hours
+njlindse 129.9 hours
+
+
+[Mar]
+barora 1.18333 hours
+ermartin 69.2167 hours
+njlindse 130.3 hours
+camitche 38.7667 hours
+
+
+[Apr]
+ermartin 31.3 hours
+njlindse 74.4 hours
+douglasm 0.25 hours
+
+
+[May]
+tmdaley 8.4 hours
+mcrobert 23.2 hours
+phu 1.68333 hours
+ermartin 14.2 hours
+douglasm 74.1667 hours
+camitche 18.3333 hours
+
+
+[Jun]
+tmdaley 4.43333 hours
+mcrobert 83.35 hours
+phu 13.8667 hours
+ermartin 0.35 hours
+douglasm 340.583 hours
+
+
+[Jul]
+mcrobert 0 hours
+dyparkin 0.166667 hours
+ermartin 2.38333 hours
+douglasm 53.5667 hours
+
+
+[Aug]
+
+
+[Sep]
+
+
+[Oct]
+
+
+[Nov]
+
+

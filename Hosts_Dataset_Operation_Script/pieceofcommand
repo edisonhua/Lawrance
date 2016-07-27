@@ -1,0 +1,97 @@
+sort -u -k4 last-output.txt 
+
+
+
+awk '!($1 in a){a[$1];print}' < last-output.txt | awk '{print $1}' > namelist
+
+or (awk '!a[$1]++' <file)
+
+
+awk '!a[$1]++' < last-output.txt 
+
+
+awk '$4 == "Jan" {print $0}' < last-output.txt | sort -u -k1
+
+
+cat test_Jan_sjames | awk '{print $9}' | tr -d '()' | awk '{split($1,a,":"); tottm += a[2]*60 + a[1]*3600;} END {print tottm;}'
+
+#not working
+cat test_Jan_sdou | awk '{print $9}' | tr -d ‘()+:’ | awk '{split($1,a,":"); tottm += a[2]*60 + a[1]*3600;} END {print tottm;}'
+
+#working fine(getting total hours)
+cat test_Jan_sdou | awk '{print $9}' | tr -d '()' | sed '/+/! s/^/0+/;' | tr -s '+:' ':' | awk '{split($1,tm,":"); tottm += tm[1]*24*3600 + tm[2]*3600 + tm[3]*60;} END{tom = tottm/3600/24; print tom}'
+
+
+
+######
+cat test_Jan_sdou | awk '{print $9}' | tr -d '()' | sed '/+/! s/^/0+/;' | tr -s '+:' ':' | awk '{split($1,tm,":"); {print tm[1], tm[2], tm[3]}; tottm += tm[1]*24*3600 + tm[2]*3600 + tm[3]*60;} END{tom = tottm/3600/24; print tom, "hours"}'
+######
+cat test_Jan_sdou | awk '{print $9}' | tr -s ':+' ':' | tr -d '()' | awk '{split($1,tm,”:”);totem += tm[1]*86400 + tm[2]*3600 + tm[3]*60;} END{ttm = tottm / 3600/24; {print ttm, "hours"}}'
+
+
+
+
+##############
+SAMPLE CODES FOR SDOU IN JAN
+##############
+sort -u -k4 last-output.txt | awk '$4 == "Jan" {print $0}' | awk '$1 == "sdou" {print $0}' | awk '{print $9}' | tr -d '()' | sed '/+/! s/^/0+/;' | tr -s '+:' ':' | awk '{split($1,tm,":"); tottm += tm[1]*24*3600 + tm[2]*3600 + tm[3]*60;} END{tom = tottm/3600/24; print tom}'
+
+##############
+SAMPLE CODES FOR SDOU IN JAN (WITH PRINTING)
+##############
+sort -u -k4 last-output.txt | awk '$4 == "Jan" {print $0}' | awk '$1 == "sdou" {print $0}' | awk '{print $9}' | tr -d '()' | sed '/+/! s/^/0+/;' | tr -s '+:' ':' | awk '{split($1,tm,":"); {print tm[1], tm[2], tm[3]}; tottm += tm[1]*24*3600 + tm[2]*3600 + tm[3]*60;} END{tom = tottm/3600/24; print tom}'
+
+——
+cat namelist | while read line; do awk -v line="$line" 'line == $1 {print $0}' Jan.txt; done
+
+
+
+
+IDEA: 
+for name in namelist:
+split each into ‘a’ for each line and then use them to compare with $1 in last-output.txt 
+
+
+
+
+
+
+
+
+cat namelist | while read line; do awk -v line="line" 'line == $1 {print $0}' | tr -d '()' | sed '/+/! s/^/0+/;' | tr -s '+:' ':' | awk '{print $0}' | awk '{split($1,tm,":"); {print tm[1], tm[2], tm[3]}; tottm += tm[1]*24*3600 + tm[2]*3600 + tm[3]*60;} END{tom = tottm/3600/24; print tom}' Jan.txt ;  done
+
+
+
+
+
+
+
+
+awk -F'[ +:()]+' '
+  FNR==NR{
+    a[$1]
+    next
+  }
+
+  !($1 in a){
+    next
+  }
+
+  NF==13{
+    b[$1]+=($12+60*$11)/60
+  }
+
+  NF==14{
+    b[$1]+=($13+60*($12+24*$11))/60
+  }
+
+  END{
+    print "[Jan]"
+    for (n in b)
+      print n,b[n], "hours"
+  }
+  ' namelist Jan.txt
+
+
+
+awk -F'[ +:()]+' 'FNR==NR{a[$1]; next;} !($1 in a){next} NF==13{b[$1]+=$12/60+$11} NF==14{b[$1]+=$13/60+$12+24*$11} END{print "[Jan]"; for (n in b)print n,b[n]}' namelist Jan.txt
