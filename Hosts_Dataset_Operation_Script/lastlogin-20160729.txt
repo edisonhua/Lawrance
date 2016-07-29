@@ -1,6 +1,4 @@
-I:q!
-:q!
-q[Dec]
+[Dec]
 phu 1.1 hours
 ermartin 16.6167 hours
 njlindse 49.1833 hours
@@ -68,3 +66,17 @@ douglasm 53.5667 hours
 [Nov]
 
 
+[TOTALS]
+barora 1.18333 hours
+tmdaley 12.8333 hours
+mcrobert 106.55 hours
+phu 24.7167 hours
+dyparkin 0.166667 hours
+ermartin 158.867 hours
+njlindse 413.017 hours
+camitche 190.15 hours
+douglasm 468.567 hours
+
+
+[GRAND TOTAL TIME]
+1376.05 hours
