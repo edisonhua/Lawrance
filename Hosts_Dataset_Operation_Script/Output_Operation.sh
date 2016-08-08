@@ -1,8 +1,15 @@
+#!/bin/bash
+#
+# script to capture yearly user login activity
+#
 last -a > last-output.txt
 awk '!($1 in a){a[$1];print}' < last-output.txt | awk '{print $1}' > namelist
 
-name_to_exclude=(sdou root sjames kaisong yqin fernsler flexlm)
-now="lastlogin-$(date +"%Y%m%d").txt"
+name_to_exclude=(sdou root sjames kaisong yqin fernsler flexlm reboot)
+hostname=`echo $HOSTNAME | awk -F. '{print $1}'`
+#now="lastlogin-$hostname-$(date +"%Y%m%d").txt"
+data_dir=/data/scratch/lastlogins/
+outfile="lastlogin-$hostname-$(date +"%Y%m%d").txt"
 
 awk '$4 == "Jan" {print $0}' < last-output.txt | sort -u -k1 > Jan.txt
 awk '$4 == "Feb" {print $0}' < last-output.txt | sort -u -k1 > Feb.txt
@@ -47,11 +54,19 @@ awk -F'[ +:()]+' 'FNR==NR{a[$1]; next;} !($1 in a){next} NF==13{b[$1]+=$12/60+$1
 
 awk '{total = total + $2} END {print "[GRAND TOTAL TIME]"; print total, "hours"}' 1_new.txt > grandtotal.txt
 
-cat t12_new.txt t1_new.txt t2_new.txt t3_new.txt t4_new.txt t5_new.txt t6_new.txt t7_new.txt t8_new.txt t9_new.txt t10_new.txt t11_new.txt 1_new.txt grandtotal.txt > "$now"
+cat t12_new.txt t1_new.txt t2_new.txt t3_new.txt t4_new.txt t5_new.txt t6_new.txt t7_new.txt t8_new.txt t9_new.txt t10_new.txt t11_new.txt 1_new.txt grandtotal.txt > "$outfile"
 
 rm namelist
 rm Jan.txt Feb.txt Mar.txt Apr.txt May.txt Jun.txt Jul.txt Aug.txt Sep.txt Oct.txt Nov.txt Dec.txt
 rm t1.txt t2.txt t3.txt t4.txt t5.txt t6.txt t7.txt t8.txt t9.txt t10.txt t11.txt t12.txt 1.txt
 rm t1_new.txt t2_new.txt t3_new.txt t4_new.txt t5_new.txt t6_new.txt t7_new.txt t8_new.txt t9_new.txt t10_new.txt t11_new.txt t12_new.txt 1_new.txt grandtotal.txt
+rm -f last-output.txt
+#
+# mail to PI's  
+cat $outfile | /bin/mail  -s "lastlogin-$hostname-$(date +"%Y%m%d")" -v  huamai\@berkeley.edu > /dev/null
+cat $outfile | /bin/mail -s "lastlogin-$hostname-$(date +"%Y%m%d")" -v  sjames\@lbl.gov > /dev/null
+
+mv "$outfile" "$data_dir"
+chown -R jbfranklin:users $data_dir
 
 
