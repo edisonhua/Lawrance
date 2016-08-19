@@ -9,7 +9,7 @@ name_to_exclude=(sdou root sjames kaisong yqin fernsler flexlm reboot)
 hostname=`echo $HOSTNAME | awk -F. '{print $1}'`
 #now="lastlogin-$hostname-$(date +"%Y%m%d").txt"
 data_dir=/data/scratch/lastlogins/
-outfile="lastlogin-$hostname-$(date +"%Y%m%d").txt"
+outfile=${data_dir}/"lastlogin-$hostname-$(date +"%Y%m%d").txt"
 
 awk '$4 == "Jan" {print $0}' < last-output.txt | sort -u -k1 > Jan.txt
 awk '$4 == "Feb" {print $0}' < last-output.txt | sort -u -k1 > Feb.txt
@@ -63,10 +63,8 @@ rm t1_new.txt t2_new.txt t3_new.txt t4_new.txt t5_new.txt t6_new.txt t7_new.txt 
 rm -f last-output.txt
 #
 # mail to PI's  
-cat $outfile | /bin/mail  -s "lastlogin-$hostname-$(date +"%Y%m%d")" -v  huamai\@berkeley.edu > /dev/null
-cat $outfile | /bin/mail -s "lastlogin-$hostname-$(date +"%Y%m%d")" -v  sjames\@lbl.gov > /dev/null
+#cat $outfile | /bin/mail  -s "lastlogin-$hostname-$(date +"%Y%m%d")" -v  JBAjo-Franklin\@lbl.gov  > /dev/null
+cat $outfile | /bin/mail -s "lastlogin-$hostname-$(date +"%Y%m%d")" -v  huamai\@berkeley.edu,sjames\@lbl.gov > /dev/null
 
-mv "$outfile" "$data_dir"
+##mv "$outfile" "$data_dir"
 chown -R jbfranklin:users $data_dir
-
-
