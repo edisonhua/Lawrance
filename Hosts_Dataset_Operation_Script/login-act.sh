@@ -2,7 +2,7 @@
 #
 # script to capture yearly user login activity
 #
-last -a > last-output.txt
+last -F > last-output.txt
 awk '!($1 in a){a[$1];print}' < last-output.txt | awk '{print $1}' > namelist
 
 name_to_exclude=(sdou root sjames kaisong yqin fernsler flexlm reboot)
